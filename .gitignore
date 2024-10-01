@@ -1,0 +1,23 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Optional debug output
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system-specific files (e.g., for macOS)
+.DS_Store
+
+# VS Code settings (optional, if you don’t want to share your editor configs)
+.vscode/

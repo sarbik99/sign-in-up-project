@@ -2,7 +2,6 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User'); 
 require('dotenv').config(); 
-
 function renderSignup(req, res) {
     res.render('signup'); 
 }
@@ -55,6 +54,7 @@ function renderSignin(req, res) {
 async function signin(req, res) {
     try {
         const { username, password } = req.body;
+        console.log(username);
         const user = await User.findOne({ username });
         if (!user) {
             return res.status(400).json({ message: "User doesn't exist!" });

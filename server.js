@@ -15,7 +15,7 @@ connectDB();
 const app = express();
 app.use(cookieParser());
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'hbs');
 app.set('views', templatesPath);
 app.use(express.static(publicPath));
